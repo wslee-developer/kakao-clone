@@ -1,26 +1,82 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Nomad Coders">
-        <meta name="description" content="Welcome to my kakao clone">
-        <title>This is my title</title>
-    </head>
-    <body>
-        <h1>This is my title</h1>
-        <h6> This is my small title</h6>
-        <section>
-            <header id="headerNumberone" class="defaultHeader">
-                <h1> Title of a section</h1>
-            </header>
-        </section>
-
-        <div>
-            <heade id="differentHeader" class="defaultHeader" > Tile of a unknown container</header>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/db6f29b608.js" crossorigin="anonymous"></script>
+    <title>Chats | Kakao Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span class="status-bar__clock">13:54</span>
         </div>
+        <div class="status-bar__column">
+        <i class="fas fa-clock"></i>
+        <i class="fas fa-volume-mute"></i>
+        <i class="fas fa-wifi"></i>
+        <span class="status-bar__battery-level">100%</span>
+        <i class="fas fa-battery-full"></i>
+        </div>
+    </div>
+    <header class="header">
+        <div class="header__header-column">
+            <h1 class="header__title">Chats</h1>
+        </div>
+        <div class="header__header-column">
+            <span class="haeder__icon">
+                <i class="fas fa-search"></i>
+            </span>
+            <span class="haeder__icon">
+                <i class="far fa-comment"></i>
+            </span>
+            <span class="haeder__icon">
+                <i class="fas fa-cog"></i>
+            </span>
+        </div>
+    </header>
+    <main class="chats">
+        <ul class="chats__list">
+            <li class="chats_chat chat">
+                <div class="chat__column">
+                    <img class="chat__avatar g-avatar" src="images/avatar.jpg" />
+                    <div class="chat_content">
+                        <span class="chat__username">
+                            Lynn
+                        </span>
+                        <span class="chat__priview">Going home</span>
+                    </div>
+                </div>
+                <div class="chat__column">
+                    <span class="chat__timestamp"Yesterday</span>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <a href="friend.html" class="nav__list-link">
+                <i class="far fa-user"></i>
+            </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="index.html" class="nav__list-link">
+                <i class="fas fa-comment"></i>
+            </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="find.html" class="nav__list-link">
+                <i class="fas fa-search"></i>
+            </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="more.html" class="nav__list-link">
+                <i class="fas fa-ellipsis-h"></i>
+            </a>
+            </li>
 
-    </body>
+        </ul>
+    </nav>
+</body>
 </html>
-
-
-<a href="http://google.com" target="_blank">go to google</a>
